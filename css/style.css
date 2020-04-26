@@ -1,0 +1,17 @@
+/* =========================
+BASE ELEMENT STYLE 
+============================*/
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* ==============================
+BASE LAYOUT STYLES
+=============================== */
