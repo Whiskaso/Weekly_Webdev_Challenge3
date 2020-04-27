@@ -2,16 +2,180 @@
 BASE ELEMENT STYLE 
 ============================*/
 
-*{
+* {
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
+    text-align: center;
+
+    color: #222222;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+button {
+    background-color: #7CC576;
+    border: none;
+    text-transform: uppercase;
+
+    border-radius: 33px;
+    padding: 22px 36px;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: scale(1.05);
+    color: #7CC576;
+    background-color: #fff;
+}
 
 
 /* ==============================
 BASE LAYOUT STYLES
 =============================== */
+
+/*--------- HEADER --------*/
+header {
+    color: #555555;
+}
+
+.header-logo p,
+.header-logo span {
+    display: inline-block;
+}
+
+.header-logo span {
+    color: #fff;
+    background-color: #7CC576;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.header-logo p {
+    font-weight: 600;
+}
+
+/*---- NAV BAR ----*/
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav ul {
+    margin-top: 10px;
+}
+
+.main-nav a {
+    font-weight: 600;
+}
+
+/* .main-nav li:not(:first-child) {
+    margin-left: 10px;
+} */
+
+/*-------- SECTION HOME --------*/
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/home.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    height: 70vh;
+    margin-top: 20px;
+}
+
+.home p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/*-------- SECTION ABOUT (1/2) --------*/
+
+.about {
+    padding-top: 40px;
+}
+
+.about span {
+    font-size: 47px;
+}
+
+.services-description {
+    font-size: 18px;
+}
+
+.services-item {
+    padding-top: 30px;
+}
+
+.services-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -15px;
+}
+
+/*----- SECTION ABOUT (2/2)  RELAX----*/
+
+.about-relax {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/relax.png) no-repeat center;
+    background-size: cover;
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    height: 80vh;
+    margin-top: 40px;
+}
+
+/*------- CONTAINERS ----------*/
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*------ TEXT TRANSFORM -----*/
+
+.text-dark-grey {
+    color: #777777;
+}
+
+.text-light-grey {
+    color: #CCCCCC;
+}

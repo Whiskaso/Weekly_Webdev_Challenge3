@@ -13,169 +13,304 @@
 <body>
 
     <header>
-        <nav>
-            <div>
+        <div class="wrapper">
+
+            <div class="header-logo">
                 <span class="fas fa-leaf"></span>
                 <p>TREEHOUSE</p>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- SECTION HOME -->
 
-    <section id="home">
-        <h1>Creative Digital Solutions</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button type="button">Viev portfolio</button>
+    <section id="home" class="home">
+        <div class="wrapper home-description">
+            <h1>Creative Digital Solutions</h1>
+            <p class="text-light-grey">Lorem ipsum dolor sit amet consectetur.</p>
+            <button type="button">View portfolio</button>
+        </div>
     </section>
 
     <!-- SECTION ABOUT (1/2) -->
 
-    <section id="about">
-        <h2>Professional services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <section id="about" class="about">
+        <div class="wrapper">
+            <h2>Professional services</h2>
+            <p class="text-dark-grey services-description">Lorem ipsum dolor sit amet consectetur.</p>
 
-        <div>
-            <div>
-                <span class="far fa-heart"></span>
-                <h3>Beautiful designs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magni quaerat maiores incidunt
-                    aperiam impedit obcaecati inventore provident!</p>
-            </div>
+            <div class="services-wrapper">
+                <div class="services-item">
+                    <span class="far fa-heart"></span>
+                    <h3>Beautiful designs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magni quaerat maiores
+                        incidunt
+                        aperiam impedit obcaecati inventore provident!</p>
+                </div>
 
-            <div>
-                <span class="fas fa-tablet-alt"></span>
-                <h3>Responsive web</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus eligendi maxime porro amet
-                    praesentium sed, sapiente neque?</p>
-            </div>
+                <div class="services-item">
+                    <span class="fas fa-tablet-alt"></span>
+                    <h3>Responsive web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus eligendi maxime porro
+                        amet
+                        praesentium sed, sapiente neque?</p>
+                </div>
 
-            <div>
-                <span class="fas fa-chart-line"></span>
-                <h3>Marketing tools</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo aspernatur possimus
-                    nihil, odio repellat esse delectus enim.</p>
+                <div class="services-item">
+                    <span class="fas fa-chart-line"></span>
+                    <h3>Marketing tools</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo aspernatur possimus
+                        nihil, odio repellat esse delectus enim.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION ABOUT (2/2)  RELAX-->
 
-    <section id="about-relax">
-        <div>
+    <section id="about-relax" class="about-relax">
+        <div class="wrapper">
             <div>
-                <img src="img/gear.svg" alt="gear">
+                <!-- <img src="img/gear.svg" alt="gear"> -->
             </div>
 
             <div>
                 <h2>Just relax <span>&amp;</span><br>
                     let us do the heavy lifting</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quae dolorum nostrum pariatur.
+                <p class="text-light-grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quae dolorum
+                    nostrum pariatur.
                     Officiis natus aliquid corrupti quam.</p>
-                <ul>
+                <ul class="text-light-grey">
                     <li>Initial Setup &amp; Cutomizations</li>
                     <li>Regular Updates</li>
                     <li>Round The Clock Support</li>
                 </ul>
                 <button type="button">Learn more</button>
             </div>
+        </div>
     </section>
 
     <!-- PORTFOLIO SECTION  -->
 
-    <section id="portfolio">
-        <h2>Latest projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <section id="portfolio" class="portfolio">
+        <div class="wrapper">
+            <h2>Latest projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
 
-        <h3>Developing a framework</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorum sint quaerat! Incidunt nesciunt
-            quae aliquid error tempore.</p>
+            <h3>Developing a framework</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorum sint quaerat! Incidunt
+                nesciunt
+                quae aliquid error tempore.</p>
 
-        <div>
             <div>
-                <img src="img/projects-icon_ecommerce.svg" alt="e-commerce">
+                <div>
+                    <img src="img/projects-icon_ecommerce.svg" alt="e-commerce">
+                </div>
+                <h3>E-commerce Ready</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <h3>E-commerce Ready</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
-        <div>
             <div>
-                <img src="img/projects-icon_seo.svg" alt="laptop computer">
+                <div>
+                    <img src="img/projects-icon_seo.svg" alt="laptop computer">
+                </div>
+                <h3>Powerful SEO Features</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <h3>Powerful SEO Features</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
-        <div>
             <div>
-                <img src="img/projects-icon_secure.svg" alt="lock">
+                <div>
+                    <img src="img/projects-icon_secure.svg" alt="lock">
+                </div>
+                <h3>Secure Encryption</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <h3>Secure Encryption</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate est obcaecati reiciendis ex nam a
-            recusandae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate est obcaecati reiciendis ex
+                nam a
+                recusandae?</p>
 
-        <a href="#">VIEV DETAILS<span class="fas fa-arrow-right"></span></a>
+            <a href="#">VIEV DETAILS<span class="fas fa-arrow-right"></span></a>
 
-        <div>
-            <img src="img/projects-section_tablet.png" alt="tablet">
+            <div>
+                <!-- <img src="img/projects-section_tablet.png" alt="tablet"> -->
+            </div>
         </div>
     </section>
 
     <!-- SECTION BLOG (1/2) CULTURE & VALUES-->
 
-    <section id="blog">
-        <h2>Culture &amp; values</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-
-        <div>
-            <div>
-                <div>
-                    <img src="img/culture-box-icon-tonet.svg" alt="music tonet">
-                </div>
-                <h3>Work-life balance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores sit veritatis temporibus,
-                    atque officiis inventore delectus praesentium?</p>
-            </div>
+    <section id="blog" class="blog">
+        <div class="wrapper">
+            <h2>Culture &amp; values</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
 
             <div>
                 <div>
-                    <img src="img/culture-box-icon-chart.svg" alt="chart">
+                    <div>
+                        <img src="img/culture-box-icon-tonet.svg" alt="music tonet">
+                    </div>
+                    <h3>Work-life balance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores sit veritatis temporibus,
+                        atque officiis inventore delectus praesentium?</p>
                 </div>
-                <h3>Quality over quantity</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id labore facere voluptatum
-                    sequi, ullam quia dicta dolorum.</p>
-            </div>
 
-            <div>
                 <div>
-                    <img src="img/culture-box-icon-star.svg" alt="star">
+                    <div>
+                        <img src="img/culture-box-icon-chart.svg" alt="chart">
+                    </div>
+                    <h3>Quality over quantity</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id labore facere voluptatum
+                        sequi, ullam quia dicta dolorum.</p>
                 </div>
-                <h3>Deliver excellence</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam sunt autem possimus? Officia
-                    provident dignissimos sint cupiditate.</p>
-            </div>
 
+                <div>
+                    <div>
+                        <img src="img/culture-box-icon-star.svg" alt="star">
+                    </div>
+                    <h3>Deliver excellence</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam sunt autem possimus?
+                        Officia
+                        provident dignissimos sint cupiditate.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SECTION BLOG (1/2) CLIENTS -->
+    <!-- SECTION BLOG (2/2) CLIENTS -->
 
-    <section id="blog-clients">
-        <h2>Our awsome clients</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <section id="blog-clients" class="blog-clients">
+        <div class="wrapper">
+            <h2>Our awsome clients</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
 
+            <div>
+                <div></div>
+
+                <div>
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus earum unde laboriosam itaque
+                        maiores."</p>
+                    <p>- Jamie Richardson, Founder of Cocoa Media</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat! At quis ipsum
+                        corrupti."
+                    </p>
+                    <p>- Kim Thompson, Founder of Rainel</p>
+                </div>
+
+                <div></div>
+            </div>
+        </div>
     </section>
+
+    <!-- SECTION CONTACT -->
+
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            <div>
+                <h2>Ready to talk about your next project?</h2>
+                <button type="button">Contact us</button>
+            </div>
+
+            <div>
+                <img src="img/envato.svg" alt="logo brand - envato">
+                <img src="img/WordPress.svg" alt="logo brand - wordpress">
+                <img src="img/Tuts+.svg" alt="logo brand - tuts">
+                <img src="img/Microlancer copy.svg" alt="logo brand - microlancer">
+            </div>
+
+            <div>
+                <div>
+                    <h3>Contact us</h3>
+
+                    <span class="fas fa-map-marker-alt"></span>
+                    <p>55 Main St. Toronto, ON MIH 3A5</p>
+
+                    <span class="fas fa-mobile-alt"></span>
+                    <p>(416)555-5252</p>
+
+                    <span class="fas fa-envelope"></span>
+                    <p>hello@treehouse.com</p>
+                </div>
+
+                <div>
+                    <h3>Latest posts</h3>
+
+                    <a href="#">
+                        <span class="fas fa-address-card"></span>
+                        <p>Made With Love In Toronto</p>
+                    </a>
+
+                    <a href="#">
+                        <span class="fas fa-image"></span>
+                        <p>Startup News & Emerging Tech</p>
+                    </a>
+
+                    <a href="#">
+                        <span class="fas fa-address-card"></span>
+                        <p>Bitcoin Will Soon Rule The World</p>
+                    </a>
+
+                    <a href="#">
+                        <span class="fas fa-address-card"></span>
+                        <p>Wearable Technology On The Rise</p>
+                    </a>
+
+                    <a href="#">
+                        <span class="fas fa-play"></span>
+                        <p>Learn Web Desing in 30 Days!</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Latest Tweets</h3>
+
+                    <a href="#">
+                        <span class="fab fa-twitter"></span>
+                        <p>
+                            Confucius: Life is really simple, but we insist on making it complicated.
+                        </p>
+                        <p><b>#famousquotes</b></p>
+                        <p>8 mins ago</p>
+                    </a>
+
+                    <a href="#">
+                        <span class="fab fa-twitter"></span>
+                        <p>
+                            Grab the Free Treehouse web template at FreebiesXpress!
+                        </p>
+                        <p><b>#freebies #templates</b></p>
+                        <p>2 days ago</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <p>&copy; Copyright 2020 Whiskaso</p>
+            <div>
+                <span class="fab fa-twitter"></span>
+                <span class="fab fa-facebook-f"></span>
+                <span class="fab fa-google"></span>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
