@@ -107,11 +107,9 @@ header {
     background-size: cover;
     color: #fff;
 
-    display: flex;
-    align-items: center;
-
-    height: 70vh;
     margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .home p {
@@ -123,6 +121,7 @@ header {
 
 .about {
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .about span {
@@ -131,6 +130,7 @@ header {
 
 .services-description {
     font-size: 18px;
+    margin-top: 0px;
 }
 
 .services-item {
@@ -150,12 +150,77 @@ header {
     background-size: cover;
 
     color: #fff;
-    display: flex;
-    align-items: center;
     text-align: left;
 
-    height: 80vh;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.about-relax p {
+    padding-top: 20px;
+}
+
+.about-relax ul {
+    list-style-position: inside;
+    list-style-image: url(../img/list-icon.svg);
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about-relax li {
+    margin-bottom: 10px;
+}
+
+.about-relax-sign {
+    color: #7CC576;
+}
+
+/*------ SECTION PORTFOLIO -------*/
+
+.portfolio {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.portfolio-content {
+    text-align: left;
+
+    margin-top: 65px;
+}
+
+.portfolio-description {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.portfolio-content-description {
+    margin-top: -10px;
+}
+
+.portfolio-content-item {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-icon {
+    border: 2px solid #000;
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.portfolio img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /*------- CONTAINERS ----------*/
