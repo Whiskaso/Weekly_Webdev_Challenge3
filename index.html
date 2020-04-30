@@ -81,7 +81,7 @@
     <section id="about-relax" class="about-relax">
         <div class="wrapper">
             <div>
-                <!-- <img src="img/gear.svg" alt="gear"> -->
+                <img class="about-relax__img" src="img/gear.svg" alt="gear">
             </div>
 
             <div>
@@ -223,27 +223,31 @@
     <section id="blog-clients" class="blog-clients">
         <div class="wrapper">
             <h2>Our awsome clients</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="text-dark-grey blog-clients__description">Lorem ipsum dolor sit amet consectetur.</p>
 
-            <div>
-                <div></div>
+            <div class="blog-clients__item">
+                <div class="blog-clients__avatar"></div>
 
-                <div>
-                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus earum unde laboriosam itaque
+                <div class="blog-clients__content">
+                    <p class="blog-clients__comment text-dark-grey">"Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Possimus
+                        earum unde laboriosam itaque
                         maiores."</p>
-                    <p>- Jamie Richardson, Founder of Cocoa Media</p>
+                    <p class="blog-clients__author">- Jamie Richardson, Founder of Cocoa Media</p>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat! At quis ipsum
+            <div class="blog-clients__item">
+                <div class="blog-clients__content">
+                    <p class="blog-clients__comment text-dark-grey">"Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Natus,
+                        quaerat! At quis ipsum
                         corrupti."
                     </p>
-                    <p>- Kim Thompson, Founder of Rainel</p>
+                    <p class="blog-clients__author">- Kim Thompson, Founder of Rainel</p>
                 </div>
 
-                <div></div>
+                <div class="blog-clients__avatar"></div>
             </div>
         </div>
     </section>
@@ -251,94 +255,134 @@
     <!-- SECTION CONTACT -->
 
     <section id="contact" class="contact">
-        <div class="wrapper">
-            <div>
+
+        <div class="contact__next-project">
+            <div class="wrapper">
                 <h2>Ready to talk about your next project?</h2>
-                <button type="button">Contact us</button>
+                <button class="contact__button" type="button">Contact us</button>
             </div>
+        </div>
 
-            <div>
-                <img src="img/envato.svg" alt="logo brand - envato">
-                <img src="img/WordPress.svg" alt="logo brand - wordpress">
-                <img src="img/Tuts+.svg" alt="logo brand - tuts">
-                <img src="img/Microlancer copy.svg" alt="logo brand - microlancer">
+        <div>
+            <div class="wrapper contact__img-container">
+                <img class="contact__img" src="img/envato.svg" alt="logo brand - envato">
+                <img class="contact__img" src="img/WordPress.svg" alt="logo brand - wordpress">
+                <img class="contact__img" src="img/Tuts+.svg" alt="logo brand - tuts">
+                <img class="contact__img" src="img/Microlancer copy.svg" alt="logo brand - microlancer">
             </div>
+        </div>
 
-            <div>
-                <div>
+        <div class="contact__container">
+            <div class="wrapper contact__flex-container">
+                <div class="contact__content">
                     <h3>Contact us</h3>
 
-                    <span class="fas fa-map-marker-alt"></span>
-                    <p>55 Main St. Toronto, ON MIH 3A5</p>
-
-                    <span class="fas fa-mobile-alt"></span>
-                    <p>(416)555-5252</p>
-
-                    <span class="fas fa-envelope"></span>
-                    <p>hello@treehouse.com</p>
+                    <div class="contact__item">
+                        <div class="contact__icon-container">
+                            <span class="contact__icon fas fa-map-marker-alt"></span>
+                        </div>
+                        <p>55 Main St. Toronto, ON MIH 3A5</p>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon-container">
+                            <span class="contact__icon fas fa-mobile-alt"></span>
+                        </div>
+                        <p>(416) 555-5252</p>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon-container">
+                            <span class="contact__icon fas fa-envelope"></span>
+                        </div>
+                        <p>hello@treehouse.com</p>
+                    </div>
                 </div>
 
-                <div>
+                <div class="contact__content">
                     <h3>Latest posts</h3>
 
-                    <a href="#">
-                        <span class="fas fa-address-card"></span>
-                        <p>Made With Love In Toronto</p>
-                    </a>
+                    <div class="contact__item">
+                        <div>
+                            <span class="fas fa-address-card"></span>
+                        </div>
+                        <a href="#">
+                            <p class="contact__post">Made With Love In Toronto</p>
+                        </a>
+                    </div>
 
-                    <a href="#">
-                        <span class="fas fa-image"></span>
-                        <p>Startup News & Emerging Tech</p>
-                    </a>
+                    <div class="contact__item">
+                        <div>
+                            <span class="fas fa-image"></span>
+                        </div>
+                        <a href="#">
+                            <p class="contact__post">Startup News & Emerging Tech</p>
+                        </a>
+                    </div>
 
-                    <a href="#">
-                        <span class="fas fa-address-card"></span>
-                        <p>Bitcoin Will Soon Rule The World</p>
-                    </a>
+                    <div class="contact__item">
+                        <div>
+                            <span class="fas fa-address-card"></span>
+                        </div>
+                        <a href="#">
+                            <p class="contact__post">Bitcoin Will Soon Rule The World</p>
+                        </a>
+                    </div>
 
-                    <a href="#">
-                        <span class="fas fa-address-card"></span>
-                        <p>Wearable Technology On The Rise</p>
-                    </a>
+                    <div class="contact__item">
+                        <div>
+                            <span class="fas fa-address-card"></span>
+                        </div>
+                        <a href="#">
+                            <p class="contact__post">Wearable Technology On The Rise</p>
+                        </a>
+                    </div>
 
-                    <a href="#">
-                        <span class="fas fa-play"></span>
-                        <p>Learn Web Desing in 30 Days!</p>
-                    </a>
+                    <div class="contact__item">
+                        <div>
+                            <span class="fas fa-play"></span>
+                        </div>
+                        <a href="#">
+                            <p class="contact__post">Learn Web Desing in 30 Days!</p>
+                        </a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="contact__content">
                     <h3>Latest Tweets</h3>
 
-                    <a href="#">
-                        <span class="fab fa-twitter"></span>
-                        <p>
-                            Confucius: Life is really simple, but we insist on making it complicated.
-                        </p>
-                        <p><b>#famousquotes</b></p>
-                        <p>8 mins ago</p>
-                    </a>
+                    <div class="contact__item">
+                        <span class="contact__twitter fab fa-twitter"></span>
+                        <div>
+                            <a href="#">
+                                <p>Confucius: Life is really simple, but we insist on making it complicated.</p>
+                            </a>
+                            <p class="contact__hashtag"><b>#famousquotes</b></p>
+                            <p class="contact__time">8 mins ago</p>
+                        </div>
+                    </div>
 
-                    <a href="#">
-                        <span class="fab fa-twitter"></span>
-                        <p>
-                            Grab the Free Treehouse web template at FreebiesXpress!
-                        </p>
-                        <p><b>#freebies #templates</b></p>
-                        <p>2 days ago</p>
-                    </a>
+                    <div class="contact__item">
+                        <span class="contact__twitter fab fa-twitter"></span>
+                        <div>
+                            <a href="#">
+                                <p>Grab the Free Treehouse web template at FreebiesXpress!</p>
+                            </a>
+                            <p class="contact__hashtag"><b>#freebies #templates</b></p>
+                            <p class="contact__time">2 days ago</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="main-footer">
         <div class="wrapper">
             <p>&copy; Copyright 2020 Whiskaso</p>
             <div>
-                <span class="fab fa-twitter"></span>
-                <span class="fab fa-facebook-f"></span>
-                <span class="fab fa-google"></span>
+                <a href="#"><span class="footer__icon fab fa-twitter"></span></a>
+                <a href="#"><span class="footer__icon fab fa-facebook-f"></span></a>
+                <a href="#"><span class="footer__icon fab fa-google"></span></a>
             </div>
         </div>
     </footer>
