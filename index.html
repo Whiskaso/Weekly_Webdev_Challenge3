@@ -12,23 +12,37 @@
 
 <body>
 
-    <header>
-        <div class="wrapper">
+    <header class="main-header">
+        <div class="wrapper header_flex-container">
 
             <div class="header-logo">
                 <span class="fas fa-leaf"></span>
                 <p>TREEHOUSE</p>
             </div>
 
+
+
             <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="dropdown">
+                    <p>MENU</p>
+                    <div class="triangle-down"></div>
+                </div>
+
+                <!-- The overlay -->
+                <div id="overlayNavBar" class="overlay">
+
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn">&times;</a>
+                    <ul class="nav-ul overlay-content">
+                        <li class="nav-li"><a href="#home">Home</a></li>
+                        <li class="nav-li"><a href="#about">About</a></li>
+                        <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-li"><a href="#blog">Blog</a></li>
+                        <li class="nav-li"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
+
         </div>
     </header>
 
