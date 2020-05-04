@@ -26,16 +26,13 @@ h3 {
     text-transform: uppercase;
 }
 
-h2 {
-    margin-bottom: 10px;
-}
-
 h1 {
     font-size: 2.6em;
 }
 
 h2 {
     font-size: 2.2em;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -102,31 +99,6 @@ BASE LAYOUT STYLES
 }
 
 /*---- NAV BAR ----*/
-
-
-/* .nav-li {
-    display: block;
-    padding: 15px;
-    background-color: rgba(119, 119, 119, .9);
-}
-
-.nav-li:hover {
-    border-bottom: 2px solid #7CC576;
-    background-color: #7CC576;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-.nav-ul {
-    position: fixed;
-    top: 110px;
-    right: 0;
-    color: #7CC576;
-} */
-
-/* .main-nav a {
-    font-weight: 600;
-} */
 
 .triangle-down {
     width: 0;
@@ -217,10 +189,6 @@ BASE LAYOUT STYLES
     }
 }
 
-
-/* .main-nav li:not(:first-child) {
-    margin-left: 10px;
-} */
 
 /*-------- SECTION HOME --------*/
 
@@ -599,15 +567,158 @@ BASE LAYOUT STYLES
 }
 
 
+/* ==========================
+=======  MEDIA QUERIES  =====
+============================*/
+
+@media (min-width: 500px) {
+    .services-wrapper {
+        width: 60%;
+    }
+}
+
+@media (min-width: 700px) {
+
+    /*------ BASE ELEMENT STYLES -----*/
+
+    h1 {
+        font-size: 3.75em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+
+    /*--------- HOME SECTION --------*/
+
+    .home {
+        padding-top: 65px;
+        padding-bottom: 85px;
+    }
+
+    /*--------- ABOUT SECTION --------*/
+    .about {
+        padding-top: 55px;
+        padding-bottom: 75px;
+    }
+
+    .services-description {
+        font-size: 20px;
+    }
+
+    .services-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .services-wrapper div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+    /*------- CONTAINERS ----------*/
+
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+
+    /*--------- HOME SECTION --------*/
+
+    .home {
+        padding: 90px 30px 110px 30px;
+    }
+
+    /*--------- ABOUT SECTION --------*/
+    .about {
+        padding-top: 65px;
+        padding-bottom: 85px;
+    }
+
+    .services-wrapper div:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .services-item {
+        max-width: 280px;
+    }
+
+    /*------- CONTAINERS ----------*/
+
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1300px) {
+
+
+    /*--------- HOME SECTION --------*/
+
+    .home {
+        padding: 90px 110px 110px 110px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ///////// media  */
 
 /* .blog-clients__comment {
     font-size: 22px;
-}
+
+
+
+
 
 .blog-clients__author {
     color: #7CC576;
     font-size: 18px;
+} */
+
+
+/* .main-nav li:not(:first-child) {
+    margin-left: 10px;
+} */
+
+
+
+
+/* .nav-li {
+    display: block;
+    padding: 15px;
+    background-color: rgba(119, 119, 119, .9);
+}
+
+.nav-li:hover {
+    border-bottom: 2px solid #7CC576;
+    background-color: #7CC576;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.nav-ul {
+    position: fixed;
+    top: 110px;
+    right: 0;
+    color: #7CC576;
+} */
+
+/* .main-nav a {
+    font-weight: 600;
 } */
