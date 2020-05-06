@@ -291,7 +291,7 @@ BASE LAYOUT STYLES
 
 .portfolio-content {
     text-align: left;
-
+    width: 100%;
     margin-top: 65px;
 }
 
@@ -307,7 +307,14 @@ BASE LAYOUT STYLES
 .portfolio-content-item {
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    margin: 15px 0;
+    float: left;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .portfolio-item-headline {
@@ -421,11 +428,13 @@ BASE LAYOUT STYLES
 .blog-clients__description {
     font-size: 20px;
     margin-top: 0;
+    margin-bottom: 60px;
 }
 
 .blog-clients__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin: 40px 0;
 }
@@ -435,17 +444,15 @@ BASE LAYOUT STYLES
     background-color: #f9f9f9;
     border-radius: 50%;
 
-    max-width: 100px;
-    max-height: 100px;
+    min-width: 120px;
+    min-height: 120px;
 
-    flex: 1;
 
     margin: 10px;
 }
 
 .blog-clients__content {
     background-color: #f9f9f9;
-    flex: 2;
 }
 
 .blog-clients__author {
@@ -505,6 +512,8 @@ BASE LAYOUT STYLES
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    color: #CCCCCC;
 }
 
 .contact__post {
@@ -533,6 +542,10 @@ BASE LAYOUT STYLES
     justify-content: space-between;
 }
 
+.contact a:hover {
+    color: #7CC576;
+}
+
 /*----------- FOOTER ----------*/
 
 .main-footer {
@@ -543,10 +556,10 @@ BASE LAYOUT STYLES
     margin: 0 10px;
 }
 
-
 /*------- CONTAINERS ----------*/
 
-.wrapper {
+.wrapper,
+.wrapper-relax {
     width: 90%;
     margin: 0 auto;
 }
@@ -575,6 +588,13 @@ BASE LAYOUT STYLES
     .services-wrapper {
         width: 60%;
     }
+
+    /*------ SECTION BLOG (1/2) CULTURE & VALUES --------*/
+
+    .blog-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 700px) {
@@ -589,6 +609,16 @@ BASE LAYOUT STYLES
         font-size: 2.5em;
     }
 
+    /*------------ SECTIONS -----------*/
+
+    .about,
+    .about-relax,
+    .portfolio,
+    .blog,
+    .blog-clients {
+        padding-top: 55px;
+        padding-bottom: 75px;
+    }
 
     /*--------- HOME SECTION --------*/
 
@@ -598,10 +628,7 @@ BASE LAYOUT STYLES
     }
 
     /*--------- ABOUT SECTION --------*/
-    .about {
-        padding-top: 55px;
-        padding-bottom: 75px;
-    }
+
 
     .services-description {
         font-size: 20px;
@@ -618,16 +645,69 @@ BASE LAYOUT STYLES
         margin-right: 20px;
     }
 
+    /*--------- PORTFOLIO SECTION --------*/
+
+    .portfolio-content {
+        width: 80%;
+    }
+
+    /*------ SECTION BLOG (1/2) CULTURE & VALUES --------*/
+
+    .blog-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        margin-top: 30px;
+    }
+
+    .blog-wrapper .blog-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /*------ SECTION BLOG (2/2) CLIENTS --------*/
+
+    .blog-clients__avatar {
+        min-width: 220px;
+        min-height: 220px;
+
+        margin: 20px;
+    }
+
+    .blog-clients__content {
+        padding: 20px 10px;
+    }
+
+    /*------- SECTION CONTACT -------*/
+
+    .contact__next-project {
+        padding: 45px 0;
+    }
+
+    .contact__img-container {
+        padding: 20px 0;
+    }
+
 
     /*------- CONTAINERS ----------*/
 
-    .wrapper {
+    .wrapper,
+    .wrapper-relax {
         width: 80%;
     }
 }
 
 @media (min-width: 1000px) {
 
+    /*------------ SECTIONS -----------*/
+
+    .about,
+    .portfolio,
+    .blog,
+    .blog-clients {
+        padding-top: 65px;
+        padding-bottom: 85px;
+    }
 
     /*--------- HOME SECTION --------*/
 
@@ -635,11 +715,7 @@ BASE LAYOUT STYLES
         padding: 90px 30px 110px 30px;
     }
 
-    /*--------- ABOUT SECTION --------*/
-    .about {
-        padding-top: 65px;
-        padding-bottom: 85px;
-    }
+    /*--------- ABOUT (1/2) SECTION --------*/
 
     .services-wrapper div:not(:last-child) {
         margin-right: 25px;
@@ -649,11 +725,104 @@ BASE LAYOUT STYLES
         max-width: 280px;
     }
 
+    /*--------- ABOUT-RELAX (2/2) SECTION --------*/
+
+    .about-relax_img-container {
+        width: 30%;
+        height: 606.4px;
+        background-color: #E9E9E9;
+        position: relative;
+        float: left;
+    }
+
+    .about-relax__img {
+        display: inline-block;
+        position: absolute;
+
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        margin: auto;
+        transform: translateX(-11%);
+    }
+
+    .about-relax_content-container {
+        width: 70%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/relax.png) no-repeat center;
+        background-size: cover;
+        float: right;
+        padding-top: 65px;
+        padding-bottom: 85px;
+        padding-left: 60px;
+        position: relative;
+    }
+
+    .about-relax {
+        background: none;
+        background-color: #E9E9E9;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-relax::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .wrapper-relax {
+        width: 100%;
+    }
+
+    /*--------- PORTFOLIO SECTION --------*/
+
+    .portfolio-content {
+        width: 70%;
+    }
+
+    /*------ SECTION BLOG (1/2) CULTURE & VALUES --------*/
+
+    .blog-wrapper {
+        margin-top: 50px;
+    }
+
+    /*-------- SECTION BLOG (2/2) CLIENTS ---------*/
+
+    .blog-clients__content {
+        padding: 30px 25px;
+    }
+
+    .contact__content {
+        flex: 1;
+    }
+
+    .contact__flex-container .contact__content:not(:last-child) {
+        margin-right: 25px;
+    }
+
+
     /*------- CONTAINERS ----------*/
 
     .wrapper {
         width: 70%;
     }
+}
+
+
+@media (min-width: 1150px) {
+
+    .about-relax__img {
+        transform: translateX(-7%);
+    }
+
+    /*--------- PORTFOLIO SECTION --------*/
+
+    .portfolio-content {
+        width: 68%;
+    }
+
+
 }
 
 @media (min-width: 1300px) {
@@ -664,9 +833,20 @@ BASE LAYOUT STYLES
     .home {
         padding: 90px 110px 110px 110px;
     }
+
+    /*--------- ABOUT RELAX SECTION --------*/
+
+    .about-relax__img {
+        transform: translateX(0%);
+    }
+
+    /*--------- PORTFOLIO SECTION --------*/
+
+    .portfolio-content {
+        width: 60%;
+    }
+
 }
-
-
 
 
 
