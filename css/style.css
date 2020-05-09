@@ -341,8 +341,8 @@ BASE LAYOUT STYLES
     border: 2px solid #000;
     border-radius: 50%;
 
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
 
     margin: 0 auto;
     position: relative;
@@ -613,11 +613,14 @@ BASE LAYOUT STYLES
 
     .about,
     .about-relax,
-    .portfolio,
     .blog,
     .blog-clients {
         padding-top: 55px;
         padding-bottom: 75px;
+    }
+
+    .portfolio {
+        padding-top: 55px;
     }
 
     /*--------- HOME SECTION --------*/
@@ -779,6 +782,15 @@ BASE LAYOUT STYLES
 
     .portfolio-content {
         width: 70%;
+    }
+
+    .portfolio-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .portfolio-div-img {
+        max-height: 500px;
     }
 
     /*------ SECTION BLOG (1/2) CULTURE & VALUES --------*/
